@@ -1,0 +1,284 @@
+body {
+  font-family: 'Noto Sans KR', 'Noto Sans', sans-serif;
+}
+
+main {
+  width: 100%;
+  margin-top: -110px;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+h1.page-heading {
+  width: 100%;
+  margin-top: 180px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.38;
+  text-align: center;
+}
+
+/* header custom element */
+
+ce-header {
+  display: flex;
+  width: 100%;
+  height: 110px;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 1;
+}
+
+ce-header .header__logo {
+  width: 128px;
+  height: 39px;
+  background-image: url(/src/images/logo_3x_black.png);
+  background-size: contain;
+}
+
+ce-header .header__nav {
+  font-size: 16px;
+}
+
+ce-header .header__nav .nav__list .nav__item {
+  display: inline-block;
+}
+
+ce-header .header__nav .nav__list .nav__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+ce-header .header__account {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+ce-header .header__account .account__item {
+  height: 14px;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+}
+
+ce-header .header__account .account__item:not(:last-child) {
+  padding-right: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+ce-header .header__account .account__item:not(:first-child) {
+  padding-left: 16px;
+}
+
+/* footer custom element */
+
+ce-footer {
+  display: block;
+  width: 100%;
+  height: 434px;
+  padding: 0 calc(16.7% - 106px);
+  color: #ffffff;
+  background-color: #00133c;
+}
+
+ce-footer .footer__logo {
+  width: 128px;
+  height: 39px;
+  margin-top: 45px;
+  object-fit: contain;
+}
+
+ce-footer .footer__contacts {
+  width: 100%;
+  height: 150px;
+  margin-top: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+ce-footer .footer__contacts .contacts__main {
+  line-height: 1.63;
+}
+
+ce-footer .footer__contacts .contacts__main .contacts__phone .contacts__customer-center {
+  font-size: 16px;
+}
+
+ce-footer .footer__contacts .contacts__main .contacts__phone .contacts__phone-number {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+ce-footer .footer__contacts .contacts__etc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+ce-footer .footer__contacts .contacts__etc .contacts__hours {
+  line-height: 1.86;
+}
+
+ce-footer .footer__contacts .contacts__etc .contacts__terms .terms__item {
+  height: 12px;
+  display: inline-flex;
+  align-items: center;
+}
+
+ce-footer .footer__contacts .contacts__etc .contacts__terms .terms__item:not(:last-child) {
+  padding-right: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+ce-footer .footer__contacts .contacts__etc .contacts__terms .terms__item:not(:first-child) {
+  padding-left: 16px;
+}
+
+ce-footer .footer__contacts .contacts__etc .contacts__terms .terms__item .terms__link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  color: #ffffff;
+}
+
+ce-footer .footer__information {
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+ce-footer .footer__information .information__item {
+  display: inline-flex;
+  align-items: center;
+  height: 13px;
+  opacity: 0.4;
+}
+
+ce-footer .footer__information .information__item:not(:last-child) {
+  padding-right: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+ce-footer .footer__information .information__item:not(:first-child) {
+  padding-left: 16px;
+}
+
+ce-footer .footer__copyright {
+  margin-top: 10px;
+  opacity: 0.3;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+/* card custom element */
+
+ce-card {
+  width: 334px;
+  height: 360px;
+  display: inline-block;
+  padding: 0 30px;
+  border-radius: 9px;
+  box-shadow: 20px 20px 30px 0 rgba(141, 141, 141, 0.16);
+  line-height: 1.33;
+}
+
+ce-card .card__rating {
+  margin-top: 57px;
+}
+
+ce-card .card__rating .rating__star {
+  margin: 2px;
+}
+
+ce-card .card__crew {
+  margin-top: 16px;
+  font-size: 15px;
+}
+
+ce-card .card__crew .crew__school {
+  height: 14px;
+  display: inline-flex;
+  align-items: center;
+  padding-right: 6px;
+  border-right: 1px solid;
+}
+
+ce-card .card__crew .crew__name {
+  display: inline-block;
+  padding-left: 6px;
+}
+
+ce-card .card__cox {
+  margin-top: 4px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+ce-card .card__cox .cox__subject {
+  display: inline-block;
+}
+
+ce-card .card__cox .cox__name {
+  display: inline-block;
+  margin-left: 11px;
+}
+
+ce-card .card__content {
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 2.14;
+}
+
+/* dropdown custom element */
+
+ce-dropdown {
+  width: 823px;
+  height: 65px;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 16px;
+}
+
+ce-dropdown .dropdown__visible {
+  width: 100%;
+  height: 65px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ce-dropdown .dropdown__visible h3.dropdown__question {
+  font-weight: 700;
+  line-height: 1.38;
+}
+
+ce-dropdown .dropdown__visible .dropdown__horizontal-bar {
+  width: 24px;
+  height: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+ce-dropdown .dropdown__visible .dropdown__horizontal-bar .dropdown__vertical-bar {
+  width: 2px;
+  height: 24px;
+  background-color: #000000;
+}
+
+ce-dropdown .dropdown__content {
+  padding: 8px 80px 40px 30px;
+  line-height: 1.75;
+}

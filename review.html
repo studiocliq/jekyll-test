@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>리얼한 강의후기 | 이지오어</title>
+<meta name="description" content="직접 경험한 학생들의 생생한 후기를 통해서 이지오어의 효과를 미리 경험해 보세요!"/>
+<meta name="keywords" content="이지오어, 화상과외, 수학과외, 고등과외, 중등과외, 맞춤형수업, 목표완주, 완주도우미, LMS시스템, 수업리포트"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="image" content="/meta_image.png"/>
+<meta name="theme-color" content="#ffffff">
+
+<meta name="robots" content="index,follow" />
+
+<!-- Open Graph  -->
+<meta property="og:url" content="https://easyoar.co.kr" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="리얼한 강의후기 | 이지오어" />
+<meta property="og:image" content="/meta_image.png" />
+<meta property="og:description" content="직접 경험한 학생들의 생생한 후기를 통해서 이지오어의 효과를 미리 경험해 보세요!" />
+<meta property="og:site_name" content="이지오어" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="article:author" content="Leple Series" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://easyoar.co.kr" />
+<meta name="twitter:title" content="리얼한 강의후기 | 이지오어" />
+<meta name="twitter:description" content="직접 경험한 학생들의 생생한 후기를 통해서 이지오어의 효과를 미리 경험해 보세요!" />
+<meta name="twitter:image" content="/meta_image.png" />
+
+<!-- Icon in the highest resolution we need it for -->
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+
+<!-- Apple Touch Icon (reuse 192px icon.png) -->
+<link rel="apple-touch-icon" href="/favicon.png" />
+
+<!-- Safari Pinned Tab Icon -->
+<link rel="mask-icon" href="/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="src/pages/review/review.css">
+    <script type="module" src="src/pages/review/review.js"></script>
+
+    <!--custom element header-->
+    <template id="header">
+  <a class="header__logo" href="/jekyll-test"></a>
+  <nav class="header__nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="/jekyll-test/introduction" class="nav__link">서비스소개</a></li>
+      <li class="nav__item"><a href="/jekyll-test/review" class="nav__link">강의후기</a></li>
+      <li class="nav__item"><a href="/jekyll-test/faq" class="nav__link">문의 & FAQ</a></li>
+      <li class="nav__item"><a target="_blank" rel="noreferrer noopener" href="https://forms.gle/xdeAcL5aRjeXm286A" class="nav__link">수업신청</a></li>
+    </ul>
+  </nav>
+  <ul class="header__account">
+    <li class="account__item"><a class="account__link" href="">로그인</a></li>
+    <li class="account__item"><a class="account__link" href="">회원가입</a></li>
+  </ul>
+</template>
+
+    <!--custom element footer-->
+    <template id="footer">
+  <a href="/jekyll-test"><img class="footer__logo" src="src/images/logo_3x_white.png"/></a>
+  <div class="footer__contacts">
+    <div class="contacts__main">
+      <div class="contacts__phone">
+        <div class="contacts__customer-center">고객센터</div>
+        <div class="contacts__phone-number">02-234-2345</div>
+      </div>
+      <!--ul class="contacts__sns">
+        <li class="sns__item"><a class="sns__link"></a></li>
+        <li class="sns__item"><a class="sns__link"></a></li>
+        <li class="sns__item"><a class="sns__link"></a></li>
+      </ul-->
+    </div>
+    <div class="contacts__etc">
+      <div class="contacts__hours">평일 10:00~19:00 (점심시간 12:00~13:00)</div>
+      <ul class="contacts__terms">
+        <li class="terms__item"><a class="terms__link">이용약관</a></li>
+        <li class="terms__item"><a class="terms__link">개인정보처리방침</a></li>
+      </ul>
+    </div>
+  </div>
+  <ul class="footer__information">
+    <li class="information__item">(주)레플시리즈</li>
+    <li class="information__item">대표 장주훈</li>
+    <li class="information__item"><address class="information__address">(02939) 서울특별시 동작구 상도로55길 8-3(상도동), 103호</address></li>
+    <li class="information__item">통신 판매업 신고 1111-서울강남-11111</li>
+    <li class="information__item">사업자 번호 111-11-11111</li>
+  </ul>
+  <div class="footer__copyright">&copy; 2021 (주)레플시리즈. All rights reserved</div>
+</template>
+
+    <!--custom element card-->
+    <template id="card">
+  <div class="card__rating"></div>
+  <div class="card__crew">
+    <div class="crew__school"></div>
+    <div class="crew__name"></div>
+  </div>
+  <div class="card__cox">
+    <div class="cox__subject"></div>
+    <div class="cox__name"></div>
+  </div>
+  <p class="card__content"></p>
+</template>
+
+  </head>
+  <body>
+    <ce-header num=2></ce-header>
+    <main>
+    <!--main section-->
+      <section class="main">
+        <h1 class="page-heading">강의 후기</h1>
+        <div class="main__column">
+          <ce-card class="column__card"
+            color="white"
+            rating=5
+            crew_school="서울 고등학교 2학년"
+            crew_name="박OO"
+            subject="확률과 통계"
+            cox_name="장주훈">
+            이지오어 프로그램 덕분에 제가 목표한 지점 끝까지
+            공부할 수 있었어요. 지금까지는 수동적으로 공부를
+            했었는데, 내가 목표한 바를 스스로 설정하고 해야할
+            일을 계속 관리하면서 능동적으로 공부하는 방법을
+            배우게 됐어요!!
+          </ce-card>
+          <ce-card class="column__card"
+            color="white"
+            rating=5
+            crew_school="성수 고등학교 2학년"
+            crew_name="손OO"
+            subject="수능 영어"
+            cox_name="박준수">
+            별 다섯개만 줄 수 있다는 사실이 넘 슬프네여 ㅜ
+            그만큼 강의가 좋다는 얘깁니다. 이지오어로 공부하면
+            잘 볼 수밖에 없어요. 10점 20점 오르는 건
+            남의 일이라고 생각했는데 제가 그렇게 성적이
+            오르니 이건 진짜 찐이에요!!!
+          </ce-card>
+        </div>
+        <div class="main__column">
+          <ce-card class="column__card"
+            color="blue"
+            rating=5
+            crew_school="경기 고등학교 1학년"
+            crew_name="이OO"
+            subject="지수/로그"
+            cox_name="강하나">
+            혼자서 공부하려니까 힘들었는데, 이지오어를
+            통해서 혼자 차근차근 끝까지 공부하는 방법을
+            배웠습니다! 앞으로도 꾸준히 이용할게요!!
+            이지오어 추천합니다!!
+          </ce-card>
+          <ce-card class="column__card"
+            color="white"
+            rating=5
+            crew_school="인천 고등학교 3학년"
+            crew_name="김OO"
+            subject="확률과 통계"
+            cox_name="이지현">
+            이지오어 강의 들으면서 개념 공부 하니까 진도가
+            쭉쭉 나가지네요 오늘 한강만 더 마스터 하면
+            통계가 끝나요^^ 계획대로 잘 되니까 기분이 좋아요ㅎㅎ
+          </ce-card>
+        </div>
+        <div class="main__description">
+          <h3 class="description__heading"><blue>생생한</blue> 이지오어 강의후기</h3>
+          <p class="description__text">
+            직접 경험한 학생들의 생생한 후기를 통해서 이지오어의<br/>
+            효과를 미리 경험해 보세요!
+          </p>
+          <button class="description__button">
+            전체보기
+            <img class="button__arrow" src="src/images/arrow.png" alt="화살표"/>
+          </button>
+        </div>
+      </section>
+    <!--carousel section-->
+      <section class="carousel">
+        <img class="carousel__left" id="carousel__left" src="src/images/arrow_left.png" alt="왼쪽 화살표"/>
+        <div class="carousel__visible" id="carousel__visible">
+          <ce-card class="visible__card"
+            color="blue"
+            rating=5
+            crew_school="경기 고등학교 1학년"
+            crew_name="이OO"
+            subject="지수/로그"
+            cox_name="강하나">
+            혼자서 공부하려니까 힘들었는데, 이지오어를
+            통해서 혼자 차근차근 끝까지 공부하는 방법을
+            배웠습니다! 앞으로도 꾸준히 이용할게요!!
+            이지오어 추천합니다!!
+          </ce-card>
+          <ce-card class="visible__card"
+            color="white"
+            rating=5
+            crew_school="서울 고등학교 2학년"
+            crew_name="박OO"
+            subject="확률과 통계"
+            cox_name="장주훈">
+            이지오어 프로그램 덕분에 제가 목표한 지점 끝까지
+            공부할 수 있었어요. 지금까지는 수동적으로 공부를
+            했었는데, 내가 목표한 바를 스스로 설정하고 해야할
+            일을 계속 관리하면서 능동적으로 공부하는 방법을
+            배우게 됐어요!!
+          </ce-card>
+          <ce-card class="visible__card"
+            color="white"
+            rating=5
+            crew_school="성수 고등학교 2학년"
+            crew_name="손OO"
+            subject="수능 영어"
+            cox_name="박준수">
+            별 다섯개만 줄 수 있다는 사실이 넘 슬프네여 ㅜ
+            그만큼 강의가 좋다는 얘깁니다. 이지오어로 공부하면
+            잘 볼 수밖에 없어요. 10점 20점 오르는 건
+            남의 일이라고 생각했는데 제가 그렇게 성적이
+            오르니 이건 진짜 찐이에요!!!
+          </ce-card>
+          <ce-card class="visible__card"
+            color="white"
+            rating=5
+            crew_school="인천 고등학교 3학년"
+            crew_name="김OO"
+            subject="확률과 통계"
+            cox_name="이지현">
+            이지오어 강의 들으면서 개념 공부 하니까 진도가
+            쭉쭉 나가지네요 오늘 한강만 더 마스터 하면
+            통계가 끝나요^^ 계획대로 잘 되니까 기분이 좋아요ㅎㅎ
+          </ce-card>
+        </div>
+        <img class="carousel__right" id="carousel__right" src="src/images/arrow_right.png" alt="오른쪽 화살표"/>
+      </section>
+    </main>
+    <ce-footer></ce-footer>
+  </body>
+</html>

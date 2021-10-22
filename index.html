@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>수학 공부, 비대면으로 완주하기 | 이지오어</title>
+<meta name="description" content="목표를 끝까지 완주하기 위한 이지오어만의 특별한 서비스를 만나보세요."/>
+<meta name="keywords" content="이지오어, 화상과외, 수학과외, 고등과외, 중등과외, 맞춤형수업, 목표완주, 완주도우미, LMS시스템, 수업리포트"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="image" content="/meta_image.png"/>
+<meta name="theme-color" content="#ffffff">
+
+<meta name="robots" content="index,follow" />
+
+<!-- Open Graph  -->
+<meta property="og:url" content="https://easyoar.co.kr" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="수학 공부, 비대면으로 완주하기 | 이지오어" />
+<meta property="og:image" content="/meta_image.png" />
+<meta property="og:description" content="목표를 끝까지 완주하기 위한 이지오어만의 특별한 서비스를 만나보세요." />
+<meta property="og:site_name" content="이지오어" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="article:author" content="Leple Series" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://easyoar.co.kr" />
+<meta name="twitter:title" content="수학 공부, 비대면으로 완주하기 | 이지오어" />
+<meta name="twitter:description" content="목표를 끝까지 완주하기 위한 이지오어만의 특별한 서비스를 만나보세요." />
+<meta name="twitter:image" content="/meta_image.png" />
+
+<!-- Icon in the highest resolution we need it for -->
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+
+<!-- Apple Touch Icon (reuse 192px icon.png) -->
+<link rel="apple-touch-icon" href="/favicon.png" />
+
+<!-- Safari Pinned Tab Icon -->
+<link rel="mask-icon" href="/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="index.js"></script>
+
+    <!--custom element header-->
+    <template id="header">
+  <a class="header__logo" href="/jekyll-test"></a>
+  <nav class="header__nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="/jekyll-test/introduction" class="nav__link">서비스소개</a></li>
+      <li class="nav__item"><a href="/jekyll-test/review" class="nav__link">강의후기</a></li>
+      <li class="nav__item"><a href="/jekyll-test/faq" class="nav__link">문의 & FAQ</a></li>
+      <li class="nav__item"><a target="_blank" rel="noreferrer noopener" href="https://forms.gle/xdeAcL5aRjeXm286A" class="nav__link">수업신청</a></li>
+    </ul>
+  </nav>
+  <ul class="header__account">
+    <li class="account__item"><a class="account__link" href="">로그인</a></li>
+    <li class="account__item"><a class="account__link" href="">회원가입</a></li>
+  </ul>
+</template>
+
+    <!--custom element footer-->
+    <template id="footer">
+  <a href="/jekyll-test"><img class="footer__logo" src="src/images/logo_3x_white.png"/></a>
+  <div class="footer__contacts">
+    <div class="contacts__main">
+      <div class="contacts__phone">
+        <div class="contacts__customer-center">고객센터</div>
+        <div class="contacts__phone-number">02-234-2345</div>
+      </div>
+      <!--ul class="contacts__sns">
+        <li class="sns__item"><a class="sns__link"></a></li>
+        <li class="sns__item"><a class="sns__link"></a></li>
+        <li class="sns__item"><a class="sns__link"></a></li>
+      </ul-->
+    </div>
+    <div class="contacts__etc">
+      <div class="contacts__hours">평일 10:00~19:00 (점심시간 12:00~13:00)</div>
+      <ul class="contacts__terms">
+        <li class="terms__item"><a class="terms__link">이용약관</a></li>
+        <li class="terms__item"><a class="terms__link">개인정보처리방침</a></li>
+      </ul>
+    </div>
+  </div>
+  <ul class="footer__information">
+    <li class="information__item">(주)레플시리즈</li>
+    <li class="information__item">대표 장주훈</li>
+    <li class="information__item"><address class="information__address">(02939) 서울특별시 동작구 상도로55길 8-3(상도동), 103호</address></li>
+    <li class="information__item">통신 판매업 신고 1111-서울강남-11111</li>
+    <li class="information__item">사업자 번호 111-11-11111</li>
+  </ul>
+  <div class="footer__copyright">&copy; 2021 (주)레플시리즈. All rights reserved</div>
+</template>
+
+    <!--custom element card-->
+    <template id="card">
+  <div class="card__rating"></div>
+  <div class="card__crew">
+    <div class="crew__school"></div>
+    <div class="crew__name"></div>
+  </div>
+  <div class="card__cox">
+    <div class="cox__subject"></div>
+    <div class="cox__name"></div>
+  </div>
+  <p class="card__content"></p>
+</template>
+
+    <!--custom element dropdown-->
+    <template id="dropdown">
+  <div class="dropdown__visible">
+    <h3 class="dropdown__question"></h3>
+    <div class="dropdown__horizontal-bar">
+      <div class="dropdown__vertical-bar"></div>
+    </div>
+  </div>
+  <p class="dropdown__content"></p>
+</template>
+  </head>
+
+
+  <body>
+    <ce-header num=0></ce-header>
+    <main>
+
+    <!--front section-->
+      <section class="front">
+        <h1 class="front__heading">
+          <span class="__light-blue">모두가 완주하는 순간,</span><br/>
+          이지오어!
+        </h1>
+        <p class="front__text">
+          이지오어(EasyOar)란 조정 경기에서 결승점이 잘 보이지않아,<br/>
+          경기 중 외치는 말로 '완주했다(노를 그만 저어라)'라는 뜻 입니다.<br/>
+          과외 선생님(콕스, 조정에서 길잡이)과 함께 <span class="__white-bold">대입이라는 긴 경주를 완주해보세요!</span>
+        </p>
+        <button class="front__button front__button_white">과외신청</button>
+        <button class="front__button front__button_blue">서비스 더보기</button>
+      </section>
+
+    <!--intro section-->
+      <section class="intro">
+        <h2 class="__section-heading intro_heading">이지오어는 <span class="__blue">끝까지 공부</span>할 수 있도록 도와줍니다</h2>
+        <p class="__section-description intro_description">입시는 장기적인 레이스이며, 레이스를 끌고 갈 수 있는 원동력은<br>바로 목표한 바를 이룰 때 느끼는 성취감입니다.</p>
+        <div class="intro_card">
+          <img class="intro_image" src="./src/images/landing_intro_1.png" alt="개념 그림">
+          <h4 class="intro_card-heading"><span class="__pink">콕스</span>는 단순히 지식전달자가 아닙니다</h4>
+          <p class="intro_card-description">학생들이 완주할 수 있도록 지식을 넘어선 경험을 제공합니다.</p>
+        </div>
+        <div class="intro_card">
+          <img class="intro_image" src="./src/images/landing_intro_2.png" alt="개념 그림">
+          <h4 class="intro_card-heading"><span class="__pink">완주 도우미</span> 솔루션을 통해</h4>
+          <p class="intro_card-description">목표 도달 계획은 체계적으로 관리하고 성취감을 느껴보세요.</p>
+        </div>
+      </section>
+
+    <!--detail section-->
+      <section class="detail">
+        <h2 class="__section-heading detail_heading">혹시 <span class="__blue">매번 1단원만</span> 풀고있나요?</h2>
+        <p class="__section-description detail_description">체계적인 레이스 우리 이지오어와 함께 걸어보아요.</p>
+        <ul class="detail_list">
+          <li class="detail_item">
+            <img class="detail_item-image" src="./src/images/landing_detail_1.png" alt="개념 그림">
+            <h4 class="detail_item-heading">국내 최고 레벨의 <span class="__pink">콕스</span></h4>
+            <p class="detail_item-description">5단계 검수 시스템을 통해, 선별된<br>콕스(선생님)와 함께 효과적인<br>1:1 수학 교육을 경험해보세요.</p>
+          </li>
+          <li class="detail_item">
+            <img class="detail_item-image" src="./src/images/landing_detail_2.png" alt="개념 그림">
+            <h4 class="detail_item-heading">직접 검수한 <span class="__pink">커리큘럼</span></h4>
+            <p class="detail_item-description">이지오어 교육 연구소에서<br>정립한 목표 완주 커리큘럽을 통해,<br>체계적으로 끝까지 공부해보세요.</p>
+          </li>
+          <li class="detail_item">
+            <img class="detail_item-image" src="./src/images/landing_detail_3.png" alt="개념 그림">
+            <h4 class="detail_item-heading">데이터를 이용한 <span class="__pink">학습 분석</span></h4>
+            <p class="detail_item-description">그저 열심히 공부하라고 응원하는 것이<br>아닌, 정량적인 데이터 분석 리포트를<br>통해 목표 완주 플랜을 세워드려요.</p>
+          </li>
+        </ul>
+      </section>
+
+    <!--difference section-->
+      <section class="difference">
+        <h2 class="__section-heading difference_heading">타사와 차별화된 <span class="__light-blue">이지오어 완주 프로그램</span></h2>
+        <p class="__section-description difference_description">선생님 매칭에서 끝나지 않습니다. 학생이 완주하는 시점까지 함께 책임집니다.</p>
+        <table class="difference_table">
+          <tr>
+            <th class="difference_cell difference_cell-invisible"></th>
+            <th class="difference_cell difference_column-header-us">이지오어 완주 프로그램</th>
+            <th class="difference_cell difference_column-header-other">타사 프로그램</th>
+          </tr>
+          <tr>
+            <th class="difference_cell difference_row-header">비용</th>
+            <td class="difference_cell difference_cell-us">200,000원</td>
+            <td class="difference_cell difference_cell-other">300,000원</td>
+          </tr>
+          <tr>
+            <th class="difference_cell difference_row-header">목표 관리 프로그램</th>
+            <td class="difference_cell difference_cell-us"><img src="./src/images/landing_difference_check.png" alt="체크" class="difference_check"></td>
+            <td class="difference_cell difference_cell-other"><img src="./src/images/landing_difference_x.png" alt="x" class="difference_x"></td>
+          </tr>
+          <tr>
+            <th class="difference_cell difference_row-header">정기 멘토링</th>
+            <td class="difference_cell difference_cell-us"><img src="./src/images/landing_difference_check.png" alt="체크" class="difference_check"></td>
+            <td class="difference_cell difference_cell-other"><img src="./src/images/landing_difference_x.png" alt="x" class="difference_x"></td>
+          </tr>
+          <tr>
+            <th class="difference_cell difference_row-header">학습 리포트</th>
+            <td class="difference_cell difference_cell-us"><img src="./src/images/landing_difference_check.png" alt="체크" class="difference_check"></td>
+            <td class="difference_cell difference_cell-other"><img src="./src/images/landing_difference_x.png" alt="x" class="difference_x"></td>
+          </tr>
+        </table>
+      </section>
+
+    <!--lms section-->
+      <section class="lms">
+        <h2 class="__section-heading lms_heading">이지오어 <span class="__blue">LMS 시스템</span></h2>
+        <p class="__section-description lms_description">선생님 매칭에서 끝나지 않습니다. 학생이 완주하는 시점까지 함께 책임집니다.</p>
+        <div class="lms_card lms_card-1">
+          <img src="./src/images/landing_lms_icon_1.png" alt="아이콘" class="lms_icon">
+          <h4 class="lms_card-heading">개인의 의지를 분석하는<br><span class="__blue">진단 및 완주 계획 시스템</span></h4>
+          <p class="lms_card-description">
+            공부에서 가장 중요한 것은 지금 현재의 성적이 아닙니다.<br>
+            성적에 대한 자가진단이 아닌, 공부할 의지에 대해서<br>
+            자가진단을 진행하고 분석 리포트를 전달드립니다.<br>
+            이를 통해 각 학생에게 최적화된 완주 계획을 수립합니다.
+          </p>
+          <img src="./src/images/landing_lms_image_1.png" alt="개념 그림" class="lms_image">
+        </div>
+        <div class="lms_card lms_card-2">
+          <img src="./src/images/landing_lms_image_2.png" alt="개념 그림" class="lms_image lms_image-2">
+          <img src="./src/images/landing_lms_icon_2.png" alt="아이콘" class="lms_icon">
+          <h4 class="lms_card-heading">세분화된 <span class="__blue">목표설정</span><br>및 <span class="__blue">지속관리 시스템</span></h4>
+          <p class="lms_card-description">
+            단순히 목표 성적만을 세팅하는 것이 아닌,<br>
+            최종 목표를 이루기 위한 세분화된 목표들을<br>
+            설정합니다. 각 목표를 이루기 위한 실행<br>
+            방안을 콕스와 함께 설정하고 지속 관리합니다.
+          </p>
+        </div>
+        <div class="lms_card lms_card-3">
+          <img src="./src/images/landing_lms_icon_3.png" alt="아이콘" class="lms_icon">
+          <h4 class="lms_card-heading">체계적인 <span class="__blue">리포팅 시스템</span></h4>
+          <p class="lms_card-description">
+            <span class="__dark-bold">
+              1. 강의계획서(수업 전)<br>
+              2. 수업결과보고서(수업 후)<br>
+              3. 월간보고서로
+            </span class="__dark-bold"><br><br>
+            이어지는 체계적인 리포팅 시스템을 통해 학생과 학부모님은<br>
+            현재 수업의 방향성 및 개선사항을 항상 확인할 수 있습니다.
+          </p>
+          <img src="./src/images/landing_lms_image_3.png" alt="개념 그림" class="lms_image">
+        </div>
+      </section>
+
+    </main>
+    <ce-footer></ce-footer>
+  </body>
+</html>

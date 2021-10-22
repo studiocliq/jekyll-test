@@ -1,0 +1,119 @@
+blue {
+  color: #245cbf;
+}
+
+section.main {
+  height: 1382px;
+}
+
+section.main .main__column {
+  width: 384px;
+}
+
+section.main .main__column:nth-of-type(1) {
+  margin-top: 120px;
+}
+
+section.main .main__column {
+  margin-top: 217px;
+}
+
+section.main .main__column .column__card {
+  margin: 20px 25px;
+}
+
+section.main .main__description {
+  margin: 397px 139px 0 89px;
+}
+
+section.main .main__description .description__heading {
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+section.main .main__description .description__text {
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 2.25;
+  color: #898989;
+}
+
+section.main .main__description .description__button {
+  width: 220px;
+  height: 60px;
+  margin-top: 65px;
+  border-radius: 30px;
+  padding-left: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.67;
+  color: #ffffff;
+  background-color: #00133c;
+}
+
+section.main .main__description .description__button .button__arrow {
+  width: 21px;
+  height: 21px;
+  margin: 0 0 -4px 6px;
+}
+
+section.carousel {
+  height: 750px;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  background-color: #f8fbff;
+}
+
+section.carousel .carousel__left {
+  width: 53px;
+  height: 53px;
+  margin-right: -11px;
+}
+
+section.carousel .carousel__right {
+  width: 53px;
+  height: 53px;
+  margin-left: -11px;
+}
+
+section.carousel .carousel__visible {
+  width: 1302px;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+section.carousel .carousel__visible .visible__card {
+  flex-shrink: 0;
+  margin: 50px;
+}
+
+section.carousel .carousel__visible .visible__prepend {
+  animation: prepend 0.5s ease-out 1 both;
+  animation-name: prepend;
+}
+
+@keyframes prepend {
+  from {
+    margin-left: -384px;
+  }
+  to {
+    margin-left: 50px;
+  }
+}
+
+section.carousel .carousel__visible .visible__append {
+  animation: append 0.5s ease-out 1 both;
+  animation-name: append;
+}
+
+@keyframes append {
+  from {
+    margin-left: 50px;
+  }
+  to {
+    margin-left: -384px;
+  }
+}

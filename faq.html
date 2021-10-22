@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>이지오어 고객센터</title>
+<meta name="description" content="이지오어에 대해 궁금한 점이 생기셨나요? 친절하게 안내해 드릴게요."/>
+<meta name="keywords" content="이지오어, 화상과외, 수학과외, 고등과외, 중등과외, 맞춤형수업, 목표완주, 완주도우미, LMS시스템, 수업리포트"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="image" content="/meta_image.png"/>
+<meta name="theme-color" content="#ffffff">
+
+<meta name="robots" content="index,follow" />
+
+<!-- Open Graph  -->
+<meta property="og:url" content="https://easyoar.co.kr" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="이지오어 고객센터" />
+<meta property="og:image" content="/meta_image.png" />
+<meta property="og:description" content="이지오어에 대해 궁금한 점이 생기셨나요? 친절하게 안내해 드릴게요." />
+<meta property="og:site_name" content="이지오어" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="article:author" content="Leple Series" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://easyoar.co.kr" />
+<meta name="twitter:title" content="이지오어 고객센터" />
+<meta name="twitter:description" content="이지오어에 대해 궁금한 점이 생기셨나요? 친절하게 안내해 드릴게요." />
+<meta name="twitter:image" content="/meta_image.png" />
+
+<!-- Icon in the highest resolution we need it for -->
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+
+<!-- Apple Touch Icon (reuse 192px icon.png) -->
+<link rel="apple-touch-icon" href="/favicon.png" />
+
+<!-- Safari Pinned Tab Icon -->
+<link rel="mask-icon" href="/favicon.png" />
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="src/pages/faq/faq.css">
+    <script type="module" src="src/pages/faq/faq.js"></script>    
+  
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--custom element header-->
+    <template id="header">
+  <a class="header__logo" href="/jekyll-test"></a>
+  <nav class="header__nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="/jekyll-test/introduction" class="nav__link">서비스소개</a></li>
+      <li class="nav__item"><a href="/jekyll-test/review" class="nav__link">강의후기</a></li>
+      <li class="nav__item"><a href="/jekyll-test/faq" class="nav__link">문의 & FAQ</a></li>
+      <li class="nav__item"><a target="_blank" rel="noreferrer noopener" href="https://forms.gle/xdeAcL5aRjeXm286A" class="nav__link">수업신청</a></li>
+    </ul>
+  </nav>
+  <ul class="header__account">
+    <li class="account__item"><a class="account__link" href="">로그인</a></li>
+    <li class="account__item"><a class="account__link" href="">회원가입</a></li>
+  </ul>
+</template>
+
+    <!--custom element footer-->
+    <template id="footer">
+  <a href="/jekyll-test"><img class="footer__logo" src="src/images/logo_3x_white.png"/></a>
+  <div class="footer__contacts">
+    <div class="contacts__main">
+      <div class="contacts__phone">
+        <div class="contacts__customer-center">고객센터</div>
+        <div class="contacts__phone-number">02-234-2345</div>
+      </div>
+      <!--ul class="contacts__sns">
+        <li class="sns__item"><a class="sns__link"></a></li>
+        <li class="sns__item"><a class="sns__link"></a></li>
+        <li class="sns__item"><a class="sns__link"></a></li>
+      </ul-->
+    </div>
+    <div class="contacts__etc">
+      <div class="contacts__hours">평일 10:00~19:00 (점심시간 12:00~13:00)</div>
+      <ul class="contacts__terms">
+        <li class="terms__item"><a class="terms__link">이용약관</a></li>
+        <li class="terms__item"><a class="terms__link">개인정보처리방침</a></li>
+      </ul>
+    </div>
+  </div>
+  <ul class="footer__information">
+    <li class="information__item">(주)레플시리즈</li>
+    <li class="information__item">대표 장주훈</li>
+    <li class="information__item"><address class="information__address">(02939) 서울특별시 동작구 상도로55길 8-3(상도동), 103호</address></li>
+    <li class="information__item">통신 판매업 신고 1111-서울강남-11111</li>
+    <li class="information__item">사업자 번호 111-11-11111</li>
+  </ul>
+  <div class="footer__copyright">&copy; 2021 (주)레플시리즈. All rights reserved</div>
+</template>
+
+    <!--custom element dropdown-->
+    <template id="dropdown">
+  <div class="dropdown__visible">
+    <h3 class="dropdown__question"></h3>
+    <div class="dropdown__horizontal-bar">
+      <div class="dropdown__vertical-bar"></div>
+    </div>
+  </div>
+  <p class="dropdown__content"></p>
+</template>
+  </head>
+
+
+  <body>
+    <ce-header num=3></ce-header>
+    <main>
+      <section class="section">
+        <h1 class="page-heading">FAQ</h1>
+        <img src="src/images/faq_background.png" alt="faq 그림" class="image">
+        <ul class="faq-list">
+          <li class="faq-item"><ce-dropdown question="수강 기간을 더 연장하고 싶어요.">TBD</ce-dropdown></li>
+          <li class="faq-item">
+            <ce-dropdown question="수강신청의 방법이 궁금합니다."
+              >&#10112; 수강을 고려하는 강의를 선택하여 강의 제목을 클릭합니다.<br
+              >&#10113; 강의 상세 정보를 확인하고, '수강신청' 버튼을 클릭합니다.<br
+              >&#10114; 마지막으로 이어지는 결제단계에서 원하시는 결제수단을 선택하여 결제를 완료하시면 원하시는 강의를 수강하실 수 있습니다.</ce-dropdown
+            >
+          </li>
+          <li class="faq-item"><ce-dropdown question="강의 커리큘럼의 확인은 어디서 하나요?">TBD</ce-dropdown></li>
+          <li class="faq-item"><ce-dropdown question="선생님께 질문하기는 어떻게 하나요?">TBD</ce-dropdown></li>
+          <li class="faq-item"><ce-dropdown question="환급 조건은 어떻게 되나요?">TBD</ce-dropdown></li>
+          <li class="faq-item"><ce-dropdown question="수강 종료일에는 몇시까지 수강이 가능한가요?">TBD</ce-dropdown></li>
+        </ul>
+      </section>
+    </main>
+    <ce-footer></ce-footer>
+  </body>
+</html>

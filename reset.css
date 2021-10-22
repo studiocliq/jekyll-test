@@ -1,0 +1,33 @@
+html, body, header, main, footer, address, a, button, div, h1, h2, h3, h4, h5, h6, img, li, nav, ol, p, section, table, td, th, tr, ul {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+ol {
+  list-style: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+ul {
+  list-style: none;
+}
